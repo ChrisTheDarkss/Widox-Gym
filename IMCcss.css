@@ -1,0 +1,45 @@
+/* CSS para dar un estilo oscuro y centrar el contenido */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Fondo negro claro (casi negro) */
+    color: #ffffff; /* Texto de color blanco para contraste */
+}
+
+.container {
+    text-align: center;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #1e1e1e; /* Un gris un poco más claro para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para dar profundidad */
+}
+
+/* Estilos para los campos de entrada y el botón para que se vean bien en modo oscuro */
+input {
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 5px; /* Espacio sobre el input */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Un color azul para el botón */
+    color: #fff;
+    cursor: pointer; /* Muestra una mano al pasar el cursor */
+    margin-top: 15px; /* Espacio sobre el botón */
+}
+
+/* Estilo para el párrafo del resultado */
+#resultado {
+    margin-top: 20px; /* Espacio sobre el texto del resultado */
+    font-size: 1.1em; /* Un poco más grande para que sea fácil de leer */
+}
