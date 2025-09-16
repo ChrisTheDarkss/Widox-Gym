@@ -1,21 +1,37 @@
 Git comando para conectarse a sus propias ramas:
 
+git remote add origin https://github.com/ChrisTheDarkss/Widox-Gym
 
-git clone --branch (Tu branch) https://github.com/ChrisTheDarkss/Widox-Gym
 
 
-Luego usas:
+Luego usas (para clonar la carpeta de tu branch):
 
-git init (la carpeta clonada)
+git clone https://github.com/ChrisTheDarkss/Widox-Gym (nombre de tu branch)
+
+despues:
+
+git checkout (nombre de tu rama)
+
+En caso de no saber las ramas disponibles usa:
+
+git branch -a
+
+Entonces:
+ 
+git init (hacia la carpeta clonada)
+
+Una vez hecho eso empiezas a agregar contenido a la carpeta clonada
 
 Despues agregas los datos de la carpeta:
 
-git add .
+git add (Nombre de lo agregado mas su formato)
 
-Una vez hecho eso actualiza los cambios con el visual de lo que quieras hacer y despues de todo escribes el siguiente comando
+Una vez añadido todo lo nuevo escribes el comando para enviarlo al proceso:
 
-git commit -u origin (nombre de tu rama)
+git commit -m "(ingrese info del archivo agregado)"
 
-Si quieres le puedes comentar lo que hiciste desde este comando
+Despues de eso escribes:
 
-git commit -m "texto que informas que cambiaste" origin Boodem
+Git push
+
+Y esta agregado en tu rama :D
