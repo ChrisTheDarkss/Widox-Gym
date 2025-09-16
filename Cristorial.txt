@@ -1,4 +1,4 @@
-Git comando para conectarse a sus propias ramas:
+Git comando para conectarse a sus propias ramas(Haganlo solo una vez. Despues de cada inicio nuevo en su pc estara guardado la conexion remota):
 
 git remote add origin https://github.com/ChrisTheDarkss/Widox-Gym
 
