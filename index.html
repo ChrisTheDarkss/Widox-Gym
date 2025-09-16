@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--Por lo que estoy entiendiendo:
+
+El <!DOCTYEM html> es el tipo de pagina que hare como el html en si
+
+El <html> es lo principal para añadir lo que vendra dentro de la pagina
+
+El <head> es para El encabezado de la pagina donde dentro pondre el:
+    <title> Titulo para la pagina
+
+El <body> es el cuerpo que tendra forma la pagina donde se le agregaran las imagenes, textos de contendio etc
+
+El <h1> es una version del titulo mas pequeño al igual que sus variantes
+    <h2>
+        <h3>
+            <h4>
+                <h5>
+                    <h6>
+
+La <p> es para ingresar la informacion para lo que se presento en el <h1>
+    Dentro de este puedes hacer espaciados con &nbsp; dentro de los parametros de <p>
+        tambien para hacer un salto entre linea puedes usar dentro el <br> siempre estando dentro de los parametros de <p>
+
+
+
+            
+Acabo de saber como hacer que un boton de acciones:
+
+primero creaemos una identificacion al boton
+<button id="NombreDelBoton">TextoDentroDelBoton</button>
+
+Con este boton podemos darle instrucciones a diferencia del otro que es el "input type"
+
+-->
+<html>  
+
+<head>
+
+<title>Mi primera pagina web</title>
+
+</head>
+
+<body>
+
+    <h1>Esta dificil aprender html?</h1>
+
+    <p>Esta super facil aprender, es como el documento de google</p>
+    <input type ="button"  value="Un boton!!"/>
+    <button id="primerbtn">Clickeame antes del siguiente boton!!</button>
+    
+    
+    <h2>Seguire aprendiendo de html?</h2>
+
+<p>Mmmm, quizas :P,&nbsp;es que tengo que aprenderlo por la pagina<br>gimnasio que tengo que hacer con mis compañeros</p>
+<p>Hola&nbsp;&nbsp;&nbsp;Mundo</p> 
+
+    <button id="btonsaludo" disabled onclick="hola()">Otro boton?</button>
+    
+</body>
+<!-- Por lo que entendi ahora 
+estos scripts siempre se ingresan fuera del body para poder tener mejor control de las instrucciones al html
+
+el const dentro del script es para que detecte el elemento dentro del html y le ponga una identificacion en el script
+para que pueda tener instrucciones
+
+dentro se pueden crear funciones(function) para determinar acciones dentro de la pagina con los botones como ejemplo
+
+Aqui cree un boton(btonsaludo) que estaria deshabilitado para que cuando el usuario accion el segundo boton de la pagina(primerbtn), este se habilite
+para que pueda estar con vida de nuevo!!
+
+
+
+-->
+    <script> 
+        const primerbtn = document.getElementById('primerbtn')
+        const btonsaludo = document.getElementById('btonsaludo')
+        btonsaludo.disabled = true;
+
+        primerbtn.onclick = function() {
+            btonsaludo.disabled = false;
+        }
+    
+        function hola(){
+            alert("¡Soy un boton con vida!")
+        }
+    </script>
+
+</html>
