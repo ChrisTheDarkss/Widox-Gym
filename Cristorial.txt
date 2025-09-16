@@ -10,7 +10,7 @@ git clone https://github.com/ChrisTheDarkss/Widox-Gym (nombre de tu branch)
 
 despues:
 
-git checkout (nombre de tu rama)
+git checkout (nombre de tu rama) [El checkout hecho una vez es que estaras ahi aun que se reinicie tu pc]
 
 En caso de no saber las ramas disponibles usa:
 
